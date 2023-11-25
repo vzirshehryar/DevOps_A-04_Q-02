@@ -13,7 +13,7 @@ ENV HOME=/opt/app
 WORKDIR $HOME
 
 # Expose the port on which your service will run
-EXPOSE 8080
+EXPOSE 8081
 
 # NOTE we assume there's only 1 jar in the target dir
 COPY --from=build /usr/src/app/target/*.jar $HOME/artifacts/app.jar
